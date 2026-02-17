@@ -13,7 +13,7 @@ class VM {
         void initVM();
         void freeVM();
 
-        InterpretREsult interpret(std::string_view source);
+        InterpretResult interpret(std::string_view source);
 
     private:
         // We'll expand in later chapters

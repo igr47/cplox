@@ -4,7 +4,7 @@
 #include <vector>
 #include <cstring>
 
-#include "vm.hpp"
+#include "vm.h"
 
 class Lox {
     public:
@@ -35,7 +35,7 @@ class Lox {
             InterpretResult result = vm.interpret(source);
 
             if (result == InterpretResult::COMPILE_ERROR) exit(65);
-            if (result == InterpretEsult::RUNTIME_ERROR) exit(70);
+            if (result == InterpretResult::RUNTIME_ERROR) exit(70);
         }
     private:
         VM vm;
@@ -63,7 +63,7 @@ class Lox {
 
             return buffer;
         }
-}
+};
 
 int main(int argc, const char* argv[]){
     if (argc > 2) {

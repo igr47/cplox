@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/clox.dir/link.d CMakeFiles/clox.dir/src/main.cpp.o CMakeFiles/clox.dir/src/scanner.cpp.o -o clox

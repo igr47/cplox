@@ -27,7 +27,7 @@ class Scanner {
         void skipWhitespace();
 
         //Token creation helpers
-        Token makeToke(TokenType type);
+        Token makeToken(TokenType type);
         Token errorToken(const std::string& message);
 
         // Literal Scanners

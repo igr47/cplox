@@ -22,10 +22,10 @@ char Scanner::peek() const {
 
 char Scanner::peekNext() const {
     if (isAtEnd()) return '\0';
-    return current[1]
+    return current[1];
 }
 
-char Scanner::match(char expected) {
+bool Scanner::match(char expected) {
     if (isAtEnd()) return false;
     if (*current != expected) return false;
 
@@ -33,7 +33,7 @@ char Scanner::match(char expected) {
     return true;
 }
 
-void Scanner::skipWhiteSpace() {
+void Scanner::skipWhitespace() {
     for(;;) {
         char c = peek();
         switch (c) {
@@ -62,12 +62,12 @@ void Scanner::skipWhiteSpace() {
     }
 }
 
-Token Scanner::makeToken(TokeType type) {
+Token Scanner::makeToken(TokenType type) {
     return Token(type, std::string_view(start, current - start), line);
 }
 
 Token Scanner::scanToken() {
-    skipWhiteSpace();
+    skipWhitespace();
     start = current;
 
     if (isAtEnd()) return makeToken(TokenType::TOKEN_EOF);
@@ -80,7 +80,7 @@ Token Scanner::scanToken() {
         case ')': return makeToken(TokenType::RIGHT_PAREN);
         case '{': return makeToken(TokenType::LEFT_BRACE);
         case '}': return makeToken(TokenType::RIGHT_BRACE);
-        case ';': return makeToken(TokenType::SEMICOMMA);
+        case ';': return makeToken(TokenType::SEMICOLON);
         case ',': return makeToken(TokenType::COMMA);
         case '.': return makeToken(TokenType::DOT);
         case '-': return makeToken(TokenType::MINUS);
@@ -92,11 +92,11 @@ Token Scanner::scanToken() {
         case '!':
             return makeToken(match('=') ? TokenType::BANG_EQUAL : TokenType::BANG);
         case '=':
-            return matchToken(match('=') ? TokenType::EQUAL_EQUAL : TokenType::EQUAL);
+            return makeToken(match('=') ? TokenType::EQUAL_EQUAL : TokenType::EQUAL);
         case '<':
-            return matchToken(match('=') ? TokenType::LESS_EQUAL : TokenType::LESS);
+            return makeToken(match('=') ? TokenType::LESS_EQUAL : TokenType::LESS);
         case '>':
-            return matchToken(match('=') ? TokenType::GREATER::EQUAL : Token::Type::GREATER);
+            return makeToken(match('=') ? TokenType::GREATER_EQUAL : TokenType::GREATER);
 
         // Literals
         case '"': return string();
@@ -135,14 +135,14 @@ Token Scanner::number() {
         while (isDigit(peek())) advance();
     }
 
-    return matchToken(TokenType::NUMBER);
+    return makeToken(TokenType::NUMBER);
 }
 
 bool Scanner::isAlpha(char c) {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= "Z") || c == '_';
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_';
 }
 
-bool Scanner::isAlphaNumeric::(char c) {
+bool Scanner::isAlphaNumeric(char c) {
     return isAlpha(c) || isDigit(c);
 }
 
@@ -151,8 +151,8 @@ Token Scanner::identifier() {
     return makeToken(identifierType());
 }
 
-TokenType SCanner::checkKeyword(int startPos, int length, const std::string& rest, TokenType type) const {
-    if (static_cast<int>(current - start) == startPos + length && std::memcmp(start + startPos, rest.cstr(), length) == 0) {
+TokenType Scanner::checkKeyword(int startPos, int length, const std::string& rest, TokenType type) const {
+    if (static_cast<int>(current - start) == startPos + length && std::memcmp(start + startPos, rest.c_str(), length) == 0) {
         return type;
     }
     return TokenType::IDENTIFIER;
@@ -195,5 +195,4 @@ TokenType Scanner::identifierType() {
 
     return TokenType::IDENTIFIER;
 }
-    }
-}
+

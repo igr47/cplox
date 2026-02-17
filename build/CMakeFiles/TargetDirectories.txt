@@ -1,0 +1,3 @@
+/home/igris/git_projects/cplox/build/CMakeFiles/clox.dir
+/home/igris/git_projects/cplox/build/CMakeFiles/edit_cache.dir
+/home/igris/git_projects/cplox/build/CMakeFiles/rebuild_cache.dir
