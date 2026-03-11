@@ -8,8 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/igris/git_projects/cplox/src/chunk.cpp" "CMakeFiles/clox.dir/src/chunk.cpp.o" "gcc" "CMakeFiles/clox.dir/src/chunk.cpp.o.d"
+  "/home/igris/git_projects/cplox/src/compiler.cpp" "CMakeFiles/clox.dir/src/compiler.cpp.o" "gcc" "CMakeFiles/clox.dir/src/compiler.cpp.o.d"
   "/home/igris/git_projects/cplox/src/main.cpp" "CMakeFiles/clox.dir/src/main.cpp.o" "gcc" "CMakeFiles/clox.dir/src/main.cpp.o.d"
   "/home/igris/git_projects/cplox/src/scanner.cpp" "CMakeFiles/clox.dir/src/scanner.cpp.o" "gcc" "CMakeFiles/clox.dir/src/scanner.cpp.o.d"
+  "/home/igris/git_projects/cplox/src/value.cpp" "CMakeFiles/clox.dir/src/value.cpp.o" "gcc" "CMakeFiles/clox.dir/src/value.cpp.o.d"
+  "/home/igris/git_projects/cplox/src/vm.cpp" "CMakeFiles/clox.dir/src/vm.cpp.o" "gcc" "CMakeFiles/clox.dir/src/vm.cpp.o.d"
   "" "clox" "gcc" "CMakeFiles/clox.dir/link.d"
   )
 

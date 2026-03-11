@@ -1,9 +1,17 @@
 file(REMOVE_RECURSE
   "CMakeFiles/clox.dir/link.d"
+  "CMakeFiles/clox.dir/src/chunk.cpp.o"
+  "CMakeFiles/clox.dir/src/chunk.cpp.o.d"
+  "CMakeFiles/clox.dir/src/compiler.cpp.o"
+  "CMakeFiles/clox.dir/src/compiler.cpp.o.d"
   "CMakeFiles/clox.dir/src/main.cpp.o"
   "CMakeFiles/clox.dir/src/main.cpp.o.d"
   "CMakeFiles/clox.dir/src/scanner.cpp.o"
   "CMakeFiles/clox.dir/src/scanner.cpp.o.d"
+  "CMakeFiles/clox.dir/src/value.cpp.o"
+  "CMakeFiles/clox.dir/src/value.cpp.o.d"
+  "CMakeFiles/clox.dir/src/vm.cpp.o"
+  "CMakeFiles/clox.dir/src/vm.cpp.o.d"
   "clox"
   "clox.pdb"
 )

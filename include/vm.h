@@ -2,6 +2,7 @@
 #define LOX_VM_HPP
 
 #include "common.h"
+#include "chunk.h"
 #include <string_view>
 
 class VM {
@@ -16,7 +17,19 @@ class VM {
         InterpretResult interpret(std::string_view source);
 
     private:
-        // We'll expand in later chapters
+        Chunk* chunk;
+        uint8_t* ip; // instruction pointer
+        std::vector<Value> stack;
+
+        // Stack operations
+        void push(Value value);
+        Value pop();
+
+        //Execution
+        InterpretResult run();
+
+        // Debug
+        static void resetStack();
 };
 
 #endif

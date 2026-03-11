@@ -76,44 +76,108 @@ CMakeFiles/clox.dir/src/main.cpp.o: CMakeFiles/clox.dir/flags.make
 CMakeFiles/clox.dir/src/main.cpp.o: /home/igris/git_projects/cplox/src/main.cpp
 CMakeFiles/clox.dir/src/main.cpp.o: CMakeFiles/clox.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clox.dir/src/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/main.cpp.o -MF CMakeFiles/clox.dir/src/main.cpp.o.d -o CMakeFiles/clox.dir/src/main.cpp.o -c /home/igris/git_projects/cplox/src/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/main.cpp.o -MF CMakeFiles/clox.dir/src/main.cpp.o.d -o CMakeFiles/clox.dir/src/main.cpp.o -c /home/igris/git_projects/cplox/src/main.cpp
 
 CMakeFiles/clox.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clox.dir/src/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/main.cpp > CMakeFiles/clox.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/main.cpp > CMakeFiles/clox.dir/src/main.cpp.i
 
 CMakeFiles/clox.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clox.dir/src/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/main.cpp -o CMakeFiles/clox.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/main.cpp -o CMakeFiles/clox.dir/src/main.cpp.s
+
+CMakeFiles/clox.dir/src/compiler.cpp.o: CMakeFiles/clox.dir/flags.make
+CMakeFiles/clox.dir/src/compiler.cpp.o: /home/igris/git_projects/cplox/src/compiler.cpp
+CMakeFiles/clox.dir/src/compiler.cpp.o: CMakeFiles/clox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clox.dir/src/compiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/compiler.cpp.o -MF CMakeFiles/clox.dir/src/compiler.cpp.o.d -o CMakeFiles/clox.dir/src/compiler.cpp.o -c /home/igris/git_projects/cplox/src/compiler.cpp
+
+CMakeFiles/clox.dir/src/compiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clox.dir/src/compiler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/compiler.cpp > CMakeFiles/clox.dir/src/compiler.cpp.i
+
+CMakeFiles/clox.dir/src/compiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clox.dir/src/compiler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/compiler.cpp -o CMakeFiles/clox.dir/src/compiler.cpp.s
 
 CMakeFiles/clox.dir/src/scanner.cpp.o: CMakeFiles/clox.dir/flags.make
 CMakeFiles/clox.dir/src/scanner.cpp.o: /home/igris/git_projects/cplox/src/scanner.cpp
 CMakeFiles/clox.dir/src/scanner.cpp.o: CMakeFiles/clox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clox.dir/src/scanner.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/scanner.cpp.o -MF CMakeFiles/clox.dir/src/scanner.cpp.o.d -o CMakeFiles/clox.dir/src/scanner.cpp.o -c /home/igris/git_projects/cplox/src/scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/clox.dir/src/scanner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/scanner.cpp.o -MF CMakeFiles/clox.dir/src/scanner.cpp.o.d -o CMakeFiles/clox.dir/src/scanner.cpp.o -c /home/igris/git_projects/cplox/src/scanner.cpp
 
 CMakeFiles/clox.dir/src/scanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clox.dir/src/scanner.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/scanner.cpp > CMakeFiles/clox.dir/src/scanner.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/scanner.cpp > CMakeFiles/clox.dir/src/scanner.cpp.i
 
 CMakeFiles/clox.dir/src/scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clox.dir/src/scanner.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/scanner.cpp -o CMakeFiles/clox.dir/src/scanner.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/scanner.cpp -o CMakeFiles/clox.dir/src/scanner.cpp.s
+
+CMakeFiles/clox.dir/src/vm.cpp.o: CMakeFiles/clox.dir/flags.make
+CMakeFiles/clox.dir/src/vm.cpp.o: /home/igris/git_projects/cplox/src/vm.cpp
+CMakeFiles/clox.dir/src/vm.cpp.o: CMakeFiles/clox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/clox.dir/src/vm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/vm.cpp.o -MF CMakeFiles/clox.dir/src/vm.cpp.o.d -o CMakeFiles/clox.dir/src/vm.cpp.o -c /home/igris/git_projects/cplox/src/vm.cpp
+
+CMakeFiles/clox.dir/src/vm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clox.dir/src/vm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/vm.cpp > CMakeFiles/clox.dir/src/vm.cpp.i
+
+CMakeFiles/clox.dir/src/vm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clox.dir/src/vm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/vm.cpp -o CMakeFiles/clox.dir/src/vm.cpp.s
+
+CMakeFiles/clox.dir/src/chunk.cpp.o: CMakeFiles/clox.dir/flags.make
+CMakeFiles/clox.dir/src/chunk.cpp.o: /home/igris/git_projects/cplox/src/chunk.cpp
+CMakeFiles/clox.dir/src/chunk.cpp.o: CMakeFiles/clox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/clox.dir/src/chunk.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/chunk.cpp.o -MF CMakeFiles/clox.dir/src/chunk.cpp.o.d -o CMakeFiles/clox.dir/src/chunk.cpp.o -c /home/igris/git_projects/cplox/src/chunk.cpp
+
+CMakeFiles/clox.dir/src/chunk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clox.dir/src/chunk.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/chunk.cpp > CMakeFiles/clox.dir/src/chunk.cpp.i
+
+CMakeFiles/clox.dir/src/chunk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clox.dir/src/chunk.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/chunk.cpp -o CMakeFiles/clox.dir/src/chunk.cpp.s
+
+CMakeFiles/clox.dir/src/value.cpp.o: CMakeFiles/clox.dir/flags.make
+CMakeFiles/clox.dir/src/value.cpp.o: /home/igris/git_projects/cplox/src/value.cpp
+CMakeFiles/clox.dir/src/value.cpp.o: CMakeFiles/clox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/clox.dir/src/value.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clox.dir/src/value.cpp.o -MF CMakeFiles/clox.dir/src/value.cpp.o.d -o CMakeFiles/clox.dir/src/value.cpp.o -c /home/igris/git_projects/cplox/src/value.cpp
+
+CMakeFiles/clox.dir/src/value.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/clox.dir/src/value.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/igris/git_projects/cplox/src/value.cpp > CMakeFiles/clox.dir/src/value.cpp.i
+
+CMakeFiles/clox.dir/src/value.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/clox.dir/src/value.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/igris/git_projects/cplox/src/value.cpp -o CMakeFiles/clox.dir/src/value.cpp.s
 
 # Object files for target clox
 clox_OBJECTS = \
 "CMakeFiles/clox.dir/src/main.cpp.o" \
-"CMakeFiles/clox.dir/src/scanner.cpp.o"
+"CMakeFiles/clox.dir/src/compiler.cpp.o" \
+"CMakeFiles/clox.dir/src/scanner.cpp.o" \
+"CMakeFiles/clox.dir/src/vm.cpp.o" \
+"CMakeFiles/clox.dir/src/chunk.cpp.o" \
+"CMakeFiles/clox.dir/src/value.cpp.o"
 
 # External object files for target clox
 clox_EXTERNAL_OBJECTS =
 
 clox: CMakeFiles/clox.dir/src/main.cpp.o
+clox: CMakeFiles/clox.dir/src/compiler.cpp.o
 clox: CMakeFiles/clox.dir/src/scanner.cpp.o
+clox: CMakeFiles/clox.dir/src/vm.cpp.o
+clox: CMakeFiles/clox.dir/src/chunk.cpp.o
+clox: CMakeFiles/clox.dir/src/value.cpp.o
 clox: CMakeFiles/clox.dir/build.make
 clox: CMakeFiles/clox.dir/compiler_depend.ts
 clox: CMakeFiles/clox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable clox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/igris/git_projects/cplox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable clox"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clox.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

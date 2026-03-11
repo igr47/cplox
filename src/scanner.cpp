@@ -33,6 +33,10 @@ bool Scanner::match(char expected) {
     return true;
 }
 
+Token Scanner::errorToken(const std::string& message) {
+    return Token(TokenType::ERROR, std::string_view(message), line);
+}
+
 void Scanner::skipWhitespace() {
     for(;;) {
         char c = peek();

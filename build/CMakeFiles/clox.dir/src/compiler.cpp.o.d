@@ -1,7 +1,7 @@
-CMakeFiles/clox.dir/src/scanner.cpp.o: \
- /home/igris/git_projects/cplox/src/scanner.cpp \
+CMakeFiles/clox.dir/src/compiler.cpp.o: \
+ /home/igris/git_projects/cplox/src/compiler.cpp \
  /usr/include/stdc-predef.h \
- /home/igris/git_projects/cplox/include/scanner.h \
+ /home/igris/git_projects/cplox/include/compiler.h \
  /home/igris/git_projects/cplox/include/token.h \
  /usr/include/c++/15/string /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
@@ -119,4 +119,24 @@ CMakeFiles/clox.dir/src/scanner.cpp.o: \
  /usr/include/c++/15/bits/memory_resource.h /usr/include/c++/15/cstddef \
  /usr/include/c++/15/bits/uses_allocator.h \
  /usr/include/c++/15/bits/uses_allocator_args.h /usr/include/c++/15/tuple \
+ /home/igris/git_projects/cplox/include/chunk.h \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/igris/git_projects/cplox/include/value.h \
+ /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
+ /usr/include/c++/15/typeinfo /usr/include/c++/15/unordered_map \
+ /usr/include/c++/15/bits/unordered_map.h \
+ /usr/include/c++/15/bits/hashtable.h \
+ /usr/include/c++/15/bits/hashtable_policy.h \
+ /usr/include/c++/15/ext/aligned_buffer.h \
+ /usr/include/c++/15/bits/enable_special_members.h \
+ /usr/include/c++/15/bits/node_handle.h \
+ /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
+ /usr/include/c++/15/compare \
+ /home/igris/git_projects/cplox/include/scanner.h \
  /usr/include/c++/15/cstring /usr/include/string.h /usr/include/strings.h

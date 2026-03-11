@@ -129,6 +129,54 @@ clox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/build
 .PHONY : clox/fast
 
+src/chunk.o: src/chunk.cpp.o
+.PHONY : src/chunk.o
+
+# target to build an object file
+src/chunk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/chunk.cpp.o
+.PHONY : src/chunk.cpp.o
+
+src/chunk.i: src/chunk.cpp.i
+.PHONY : src/chunk.i
+
+# target to preprocess a source file
+src/chunk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/chunk.cpp.i
+.PHONY : src/chunk.cpp.i
+
+src/chunk.s: src/chunk.cpp.s
+.PHONY : src/chunk.s
+
+# target to generate assembly for a file
+src/chunk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/chunk.cpp.s
+.PHONY : src/chunk.cpp.s
+
+src/compiler.o: src/compiler.cpp.o
+.PHONY : src/compiler.o
+
+# target to build an object file
+src/compiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/compiler.cpp.o
+.PHONY : src/compiler.cpp.o
+
+src/compiler.i: src/compiler.cpp.i
+.PHONY : src/compiler.i
+
+# target to preprocess a source file
+src/compiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/compiler.cpp.i
+.PHONY : src/compiler.cpp.i
+
+src/compiler.s: src/compiler.cpp.s
+.PHONY : src/compiler.s
+
+# target to generate assembly for a file
+src/compiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/compiler.cpp.s
+.PHONY : src/compiler.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -177,6 +225,54 @@ src/scanner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/scanner.cpp.s
 .PHONY : src/scanner.cpp.s
 
+src/value.o: src/value.cpp.o
+.PHONY : src/value.o
+
+# target to build an object file
+src/value.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/value.cpp.o
+.PHONY : src/value.cpp.o
+
+src/value.i: src/value.cpp.i
+.PHONY : src/value.i
+
+# target to preprocess a source file
+src/value.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/value.cpp.i
+.PHONY : src/value.cpp.i
+
+src/value.s: src/value.cpp.s
+.PHONY : src/value.s
+
+# target to generate assembly for a file
+src/value.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/value.cpp.s
+.PHONY : src/value.cpp.s
+
+src/vm.o: src/vm.cpp.o
+.PHONY : src/vm.o
+
+# target to build an object file
+src/vm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/vm.cpp.o
+.PHONY : src/vm.cpp.o
+
+src/vm.i: src/vm.cpp.i
+.PHONY : src/vm.i
+
+# target to preprocess a source file
+src/vm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/vm.cpp.i
+.PHONY : src/vm.cpp.i
+
+src/vm.s: src/vm.cpp.s
+.PHONY : src/vm.s
+
+# target to generate assembly for a file
+src/vm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clox.dir/build.make CMakeFiles/clox.dir/src/vm.cpp.s
+.PHONY : src/vm.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... clox"
+	@echo "... src/chunk.o"
+	@echo "... src/chunk.i"
+	@echo "... src/chunk.s"
+	@echo "... src/compiler.o"
+	@echo "... src/compiler.i"
+	@echo "... src/compiler.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/scanner.o"
 	@echo "... src/scanner.i"
 	@echo "... src/scanner.s"
+	@echo "... src/value.o"
+	@echo "... src/value.i"
+	@echo "... src/value.s"
+	@echo "... src/vm.o"
+	@echo "... src/vm.i"
+	@echo "... src/vm.s"
 .PHONY : help
 
 

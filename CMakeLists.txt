@@ -7,5 +7,9 @@ include_directories(include)
 
 add_executable(clox
     src/main.cpp
+    src/compiler.cpp
     src/scanner.cpp
+    src/vm.cpp
+    src/chunk.cpp
+    src/value.cpp
 )
