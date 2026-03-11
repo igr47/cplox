@@ -86,8 +86,12 @@ void Parser::advance() {
     previous = current;
 
     for (;;) {
-        Scanner scanner(compilingChunk ? "" : "");
-        current = scanner.scanToken();
+        //Scanner scanner(compilingChunk ? "" : "");
+        if (!scanner) {
+            error("No scanner available");
+            return;
+        }
+        current = scanner->scanToken();
 
         if (current.type != TokenType::ERROR) break;
 
@@ -250,6 +254,7 @@ bool Compiler::compile(std::string_view source, Chunk* chunk) {
     parser.panicMode = false;
 
     Scanner scanner(source);
+    parser.scanner = &scanner;
 
     // Initialize parser by advancing to first token
     parser.advance();

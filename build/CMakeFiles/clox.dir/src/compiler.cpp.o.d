@@ -128,6 +128,7 @@ CMakeFiles/clox.dir/src/compiler.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /home/igris/git_projects/cplox/include/value.h \
+ /home/igris/git_projects/cplox/include/scanner.h \
  /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
  /usr/include/c++/15/typeinfo /usr/include/c++/15/unordered_map \
  /usr/include/c++/15/bits/unordered_map.h \

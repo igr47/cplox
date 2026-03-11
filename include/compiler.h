@@ -3,6 +3,7 @@
 
 #include "token.h"
 #include "chunk.h"
+#include "scanner.h"
 #include <string_view>
 #include <functional>
 #include <unordered_map>
@@ -45,11 +46,12 @@ class Parser {
         bool hadError = false;
         bool panicMode = false;
         Chunk* compilingChunk = nullptr;
+        Scanner* scanner;
 
         // Parse rule table
         static std::unordered_map<TokenType, ParseRule> rules;
 
-        Parser() = default;
+        Parser() : scanner(nullptr) {}
         ~Parser() = default;
 
         // Error handling
